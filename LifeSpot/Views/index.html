@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
+    <!--Подключение стилей по относительному пути из внешнего файла-->
+    <link href="../Static/Css/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <!--Заголовок страницы-->
-    <h1>LifeSpot — прямые трансляции с улиц</h1>
-    <!--Параграф-->
-    <p>Покажем, что происходит прямо сейчас</p>
+    <header id="header">
+        <!--Заголовок страницы-->
+        <h1>LifeSpot - прямые трансляции с улиц</h1>
+        <!--Параграф-->
+        <p>Покажем, что происходит прямо сейчас</p>
+        <!--Поисковое поле-->
+        <input type="text" size="50%"/>
+    </header>
+    <aside id="sidebar">
+        <div class="navbar">
+            <a href="/"><p>Все трансляции</p></a>
+            <a href="/"><p>О проекте</p></a>
+        </div>
+    </aside>
+    <main>
+        <div class="bordered">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1hNF3Wuw0LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">New York City</h3>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KHIApygKGT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">Korea</h3>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">Лондон, автобусный маршрут</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>LifeSpot - все права защищены</p>
+        <p>Связаться с нами: contact@lifespot.ru</p>
+    </footer>
 </body>
 </html>
