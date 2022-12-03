@@ -21,7 +21,7 @@ namespace LifeSpot
 
             app.UseRouting();
 
-            // Загружаем отдельные элементы для вставки в шаблон: боковое меню и футер
+            // 
             string footerHtml = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "footer.html"));
             string sideBarHtml = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "sideBar.html"));
 
@@ -31,7 +31,7 @@ namespace LifeSpot
                 {
                     var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "index.html");
 
-                    // Загружаем шаблон страницы, вставляя в него элементы.
+                    // 
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                         .Replace("<!--SIDEBAR-->", sideBarHtml)
                         .Replace("<!--FOOTER-->", footerHtml);
@@ -43,7 +43,7 @@ namespace LifeSpot
                 {
                     var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "testing.html");
 
-                    // Загружаем шаблон страницы, вставляя в него элементы.
+                    // 
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                         .Replace("<!--SIDEBAR-->", sideBarHtml)
                         .Replace("<!--FOOTER-->", footerHtml);
