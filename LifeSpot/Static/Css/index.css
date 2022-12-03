@@ -71,6 +71,7 @@ header, footer, body, .video-container {
 .navbar p:hover {
     color: aliceblue;
 }
+
 input:focus {
     border: 2px solid red;
 }
