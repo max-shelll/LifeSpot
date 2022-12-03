@@ -31,7 +31,7 @@ namespace LifeSpot
                 {
                     var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "index.html");
 
-                    // Загружаем шаблон страницы, вставляя в него элементы
+                    // Загружаем шаблон страницы, вставляя в него элементы.
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
                         .Replace("<!--SIDEBAR-->", sideBarHtml)
                         .Replace("<!--FOOTER-->", footerHtml);
