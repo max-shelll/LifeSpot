@@ -6,6 +6,20 @@
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script defertype="text/javascript" src="../Static/JS/index.js"></script>
+    <script>
+        // Проверка на возраст
+        // checkAge();
+
+        // Вывод данных сессии в консоль
+        sessionLog();
+
+        // Функция для получения пользовательского ввода    
+        const inputParseFunction = function ()
+        {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+    </script>
 </head>
 
 <body>
@@ -13,7 +27,7 @@
     <header id="header">
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
-        <input type="text" oninput="searchName()" />
+        <input type="text" oninput="filterContent()" />
     </header>
 
     <!--SIDEBAR-->

@@ -57,6 +57,19 @@ input {
     outline: none;
 }
 
+.review-container, .review-button {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 0.5%;
+}
+
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
 /* Комбинированный селектор - применяется ко всем элементам */
 header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
