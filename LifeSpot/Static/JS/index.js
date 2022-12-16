@@ -89,6 +89,6 @@ function filterContent()
 * 
 * */
 
-setTimeout(() =>
+/*setTimeout(() =>
     alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
-    30000);
+    30000);*/

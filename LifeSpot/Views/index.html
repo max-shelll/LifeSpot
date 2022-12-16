@@ -7,13 +7,10 @@
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script defertype="text/javascript" src="../Static/JS/index.js"></script>
     <script>
-        // Проверка на возраст
         // checkAge();
 
-        // Вывод данных сессии в консоль
         sessionLog();
-
-        // Функция для получения пользовательского ввода    
+   
         const inputParseFunction = function ()
         {
             return document.getElementsByTagName('input')[0].value.toLowerCase();
@@ -25,9 +22,7 @@
 <body>
 
     <header id="header">
-        <h1>LifeSpot - прямые трансляции с улиц</h1>
-        <p>Покажем, что происходит прямо сейчас</p>
-        <input type="text" oninput="filterContent()" />
+        <input type="search" oninput="filterContent()" placeholder="Search" />
     </header>
 
     <!--SIDEBAR-->

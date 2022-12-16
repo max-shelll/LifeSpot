@@ -2,15 +2,21 @@
 .video-container {
     display: inline-block;
     padding-left: 1%;
-    padding-top: 1%;
+    padding-top: 5%;
 }
 
 .navbar {
     color: darkgray;
     padding-left: 15%;
+    border-bottom: 2px solid #1c1c1c;
 }
 
 .navbar p {
+    color: white;
+    padding-left: 15%;
+}
+
+.sideButton {
     color: darkgray;
     padding-left: 15%;
 }
@@ -19,10 +25,25 @@ header {
     color: black;
     padding-left: 1%;
     padding-top: 1.2%;
+    border-bottom: 2px solid #1c1c1c;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: darkgray;
 }
 
 #header {
-    color: #44453f;
+    color: darkgray;
+    padding-left: 1%;
+    padding-top: 1%;
 }
 
 footer {
@@ -41,20 +62,34 @@ aside {
     z-index: 1; /* Сайд-бар будет поверх остальных элементов */
     top: 0; /* Сайдбар будет в самой верхней части страницы */
     left: 0;
-    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    background-color: #0f0f0f;
+    border-right: 2px solid #1c1c1c;
     overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
     padding-top: 2%;
     font-size: large;
+    position: fixed;
+    height: 100%;
 }
 
 body {
     padding-left: 11%;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 input {
-    border: 2px solid darkgray;
-    border-radius: 2px;
-    outline: none;
+    background-color: #0f0f0f;
+    height: 40px;
+    border: 2px solid #1c1c1c;
+    border-radius: 50px;
+    padding-left: 10px;
+    color: white;
+    width: 30%;
+    margin-bottom: 1%;
 }
 
 .review-container, .review-button {
@@ -68,6 +103,16 @@ input {
     margin-top: 0.5em;
     padding-left: 1%;
     padding-top: 1%;
+    color: darkgray;
+}
+
+.likeButton {
+    background-color: #0f0f0f;
+    color: darkgray;
+}
+
+.video-title {
+    color: #fff;
 }
 
 /* Комбинированный селектор - применяется ко всем элементам */
@@ -76,15 +121,15 @@ header, footer, aside, body, .navbar, .video-container {
 }
 
 header, footer, body, .video-container {
-    background-color: linen;
+    background-color: #0f0f0f;
 }
 
 /* Effects */
 
 .navbar p:hover {
-    color: aliceblue;
+    background-color: #1c1c1c;
 }
 
-input:focus {
-    border: 2px solid red;
+button:hover {
+    border: 2px solid white;
 }
