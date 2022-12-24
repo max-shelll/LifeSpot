@@ -129,7 +129,7 @@ header, footer, body, .video-container {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin: initial;
 }
 
 .prev, .next {

@@ -56,8 +56,8 @@ namespace LifeSpot
                 builder.MapGet($"/SliderImg/{fileName}", async context =>
                 {
                     var imgPath = Path.Combine(Directory.GetCurrentDirectory(), "SliderImg", fileName);
-                    var img = await File.ReadAllTextAsync(imgPath);
-                    await context.Response.WriteAsync(img);
+                    var img = await File.ReadAllBytesAsync(imgPath);
+                    await context.Response.Body.WriteAsync(img);
                 });
             }
         }
